@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<students>
+    <student SL.NO.="23">
+        <name>john carter</name>
+        <date>25/12/2015</date>
+    </student>
+    <student SL.NO.="29">
+        <name>Bob Marshel</name>
+        <date>13/01/1999</date>
+    </student>
+    <student SL.NO.="35">
+        <name>Clark Kent</name>
+        <date>17/06/2005</date>
+    </student>
+</students>
