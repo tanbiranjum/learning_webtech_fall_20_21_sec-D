@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<products>
+    <product id="11">
+        <NAME>samsung</NAME>
+        <unitPrice>35000</unitPrice>
+        <STOCK>50</STOCK>
+        <STATUS>1</STATUS>
+    </product>
+    <product id="20">
+        <NAME>HTC</NAME>
+        <unitPrice>65300</unitPrice>
+        <STOCK>35</STOCK>
+        <STATUS>0</STATUS>
+    </product>
+    <product id="23">
+        <NAME>NOKIA</NAME>
+        <unitPrice>25100</unitPrice>
+        <STOCK>100</STOCK>
+        <STATUS>1</STATUS>
+    </product>
+</products>
