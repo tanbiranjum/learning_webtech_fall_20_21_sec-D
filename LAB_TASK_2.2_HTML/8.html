@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <table width="600" border="1" align="center">
+        <tr>
+          <td width="80" colspan="3" align="center">
+            <h1>PERSON PROFILE</h1>
+          </td>
+        </tr>
+        <tr>
+          <td width="30" height="30">Name</td>
+          <td width="70">
+            <input type="text" name="name" />
+          </td>
+          <td width="30"></td>
+        </tr>
+        <tr>
+          <td width="30" height="30">Email</td>
+          <td width="70">
+            <input type="email" name="email" />
+          </td>
+          <td width="30"></td>
+        </tr>
+        <tr>
+          <td width="30" height="30">Gender</b></td>
+          <td width="70">
+            <input type="radio" name="gender" /> Male
+            <input type="radio" name="gender" /> Female
+            <input type="radio" name="gender" /> Other
+          </td>
+          <td width="30"></td>
+        </tr>
+        <tr>
+          <td width="30" height="30">Date of Birth</td>
+          <td width="70">
+            <input type="text" name="dd" size="1" />/
+            <input type="text" name="mm" size="1" /> /
+            <input type="text" name="yyyy" size="3" /> <i>(dd/mm/yyyy)</i>
+          </td>
+          <td width="30"></td>
+        </tr>
+        <tr>
+          <td width="30" height="30">Blood Group </td>
+          <td width="70">
+            <select name="BG">
+              <option value="" selected>A+</option>
+              <option value="">A-</option>
+              <option value="">B+</option>
+              <option value="">B-</option>
+              <option value="">O+</option>
+              <option value="">O-</option>
+              <option value="">AB+</option>
+              <option value="">AB-</option>
+            </select>
+            <br />
+          </td>
+          <td width="30"></td>
+        </tr>
+        <tr>
+          <td width="30" height="30">Degree</td>
+          <td width="70">
+            <input type="checkbox" name="dpt" /> SSC
+            <input type="checkbox" name="dpt" /> HSC
+            <input type="checkbox" name="dpt" /> BSc.
+            <input type="checkbox" name="dpt" /> MSc.
+          </td>
+          <td width="30"></td>
+        </tr>
+        <tr>
+          <td height="30">Photo</td>
+          <td width="70" colspan="2">
+            <input type="file" name="picture" />
+          </td>
+        </tr>
+        <tr>
+          <td width="60" height="30" colspan="3"></td>
+        </tr>
+        <tr>
+          <td width="60" height="30" colspan="3" align="right">
+            <input type="submit" name="submit" />
+            <input type="reset" name="reset"/> <br />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
