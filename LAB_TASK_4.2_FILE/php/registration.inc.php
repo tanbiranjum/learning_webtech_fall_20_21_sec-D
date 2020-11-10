@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     fwrite($file, $dataString);
     fclose($file);
 
-    header("location: ../views/registration.php?message=success");
+    header("location: ../views/registration.php?status=success");
     echo "success";
 } else {
     header("location: ../views/registration.php");
