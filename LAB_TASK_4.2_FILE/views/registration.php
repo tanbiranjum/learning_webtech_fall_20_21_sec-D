@@ -14,7 +14,7 @@
         ?>
         <tr>
             <td>
-                <form action="registration.php" method="post">
+                <form action="../php/registration.inc.php" method="post">
 
                     <fieldset>
                         <legend><b>REGISTRATION</b></legend>
