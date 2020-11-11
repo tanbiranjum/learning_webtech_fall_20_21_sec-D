@@ -13,8 +13,8 @@
 						Name<br /><input type="text" name="name"><br />
 						User Type
 						<hr />
-						<input type="radio" name="type" value="user" />User
-						<input type="radio" name="type" value="admin" />Admin
+						<input type="radio" name="type" value="User" />User
+						<input type="radio" name="type" value="Admin" />Admin
 						<hr />
 						<input type="submit" value="Sign Up" name="submit">
 						<a href="login.php">Sign In</a>
