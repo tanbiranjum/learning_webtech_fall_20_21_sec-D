@@ -9,7 +9,11 @@ if (isset($_POST['submit'])) {
         $_SESSION['userId'] = $id;
         session_start();
         $_SESSION['userId'] = $id;
-        header("Location: profile.php?status=success");
+        if ($_COOKIE['user-type'] === "Admin") {
+            header("Location: admin_home.php?status=success");
+        } elseif ($_COOKIE['user-type'] === "User") {
+            header("Location: user_home.php?status=success");
+        }
     } else {
         header("Location: login.php?error=invalid-credential");
     }
@@ -27,7 +31,9 @@ function loginValidator($givenId, $givenPwd)
         $id = explode("|", $line)[0];
         $password = explode("|", $line)[2];
         if ($givenId === $id && $givenPwd === $password) {
+            $type = explode("|", $line)[3];
             fclose($file);
+            setcookie('user-type', $type, time() + 3600, "/");
             return true;
         }
     }
