@@ -4,7 +4,6 @@ if (!isset($_SESSION['userId'])) {
 	header("Location: login.php");
 }
 include_once("profile.inc.php");
-
 ?>
 
 <center>
@@ -14,15 +13,15 @@ include_once("profile.inc.php");
 		</tr>
 		<tr>
 			<td>ID</td>
-			<td><?php $id ?>
+			<td><?php echo $id ?>
 		</tr>
 		<tr>
 			<td>NAME</td>
-			<td><?php $name ?></td>
+			<td><?php echo $name ?></td>
 		</tr>
 		<tr>
 			<td>USER TYPE</td>
-			<td><?php $type ?></td>
+			<td><?php echo $type ?></td>
 		</tr>
 		<tr>
 			<td colspan="2" align="right"><a href="home.html">Go Home</a></td>
