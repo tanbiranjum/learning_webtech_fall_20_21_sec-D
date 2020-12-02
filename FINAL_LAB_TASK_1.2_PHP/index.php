@@ -22,6 +22,7 @@
             <legend>Register</legend>
             <label for="username">Username</label>
             <input type="text" name="username">
+            <button type="search">Search</button>
             <label for="name">Name</label>
             <input type="text" name="name">
             <label for="contact-no">Contact No</label>

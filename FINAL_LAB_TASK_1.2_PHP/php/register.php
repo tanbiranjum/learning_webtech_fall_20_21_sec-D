@@ -1,6 +1,7 @@
 <?php
+$connection = mysqli_connect('localhost', 'root', '', 'webtech');
+
 if (isset($_POST['submit'])) {
-    $connection = mysqli_connect('localhost', 'root', '', 'webtech');
     $username = $_POST['username'];
     $name = $_POST['name'];
     $contactNo = $_POST['contact-no'];
@@ -20,6 +21,16 @@ if (isset($_POST['submit'])) {
     } catch (Exception $e) {
         header('Location: ../index.php?status=error');
     }
-} else {
-    echo "Hello world";
+} elseif ($_REQUEST['search']) {
+    $username = $_POST['username'];
+
+    $query = "SELECT * FROM employee WHERE employee_username = '$username'";
+
+    $result = mysqli_query($connection, $query);
+
+    while ($row = $mysqli_fetch_assoc) {
+        $name = $row['employee_name'];
+        $contactNo = $row['employee_contactno'];
+        $password = $row['employee_password'];
+    }
 }
