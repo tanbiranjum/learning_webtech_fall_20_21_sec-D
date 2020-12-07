@@ -15,7 +15,7 @@ function validation() {
     if(filter(input.value) === false) {
         errorString += 'Invalid String  </br>';
     }
-    if(isLetter(inputText.charAt(0))) {
+    if(isLetter(inputText.charAt(0)) === false) {
         errorString += 'First letter is not character.</br>';
     }
     errText.innerHTML = errorString;
