@@ -22,6 +22,7 @@
             <a href="home.html">Home</a>
         </fieldset>
     </form>
+    <script src="../asset/js/forgetpwd.js"></script>
 </body>
 
 </html>
