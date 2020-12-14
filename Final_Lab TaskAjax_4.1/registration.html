@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Regestration</legend>
+            <label for="id">ID</label>
+            <input type="text" name="id" id="id">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="pwd">
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" name="cpassword" id="pwd">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="type">User type [User/Admin]</label>
+            <select name="type" id="type">
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <hr>
+            <button type="submit">Register</button>
+            <a href="login.html">Login</a>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<style>
+    label {
+        display: block;
+    }
+    form {
+        width: 20%;
+        margin: 0 auto;
+    }
+</style>
